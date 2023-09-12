@@ -1,0 +1,68 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; 
+  display: flex; 
+  border: 2px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  background-color: #1F2937;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  border: 2px solid black;
+}
+
+.hero h1 {
+  font: 48px;
+  font-family: #F9FAF8;
+}
+
+.content {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.card > div {
+  border: 2px solid blue;
+}
+
+.card > p {
+  text-align: center;
+}
+
+.actionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueContainer {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+}
