@@ -1,33 +1,89 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
 ul {
   list-style: none;
   margin: 0px;
   padding: 0px; 
   display: flex; 
-  border: 2px solid black;
+  gap: 30px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+
+
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
+  justify-content: space-evenly;
+  padding: 16px;
+  color: #E5E7EB;
   background-color: #1F2937;
-  color: white;
+  flex: 0.5;
+  gap: 30px;
 }
+
 
 .hero {
   display: flex;
-  border: 2px solid black;
+  flex: 3;
+  background-color: #1F2937;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
 }
 
-.hero h1 {
-  font: 48px;
-  font-family: #F9FAF8;
+.title {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 600;
 }
 
-.content {
+.hero p  {
+  font-size: 18px;
+  color: #E5E7EB;
+
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+}
+
+.left-side > button {
+  background-color: #3882F6;
+  padding: 8px 20px;
+  border-radius:8px;
+  border: none;
+  color: #E5E7EB;
+  font-weight: 800;
+  width: 100px;
+}
+
+.img-side img {
+  width: 400px;
+}
+
+
+
+.randomInfo {
   display: flex; 
   flex-direction: column;
   align-items: center;
+  gap: 16px;
+  flex: 2;
 }
 
 .cardContainer {
@@ -36,33 +92,89 @@ ul {
   gap: 52px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 0;
+}
+
 .card > div {
-  border: 2px solid blue;
+  border: 3px solid #3882F6;
+  border-radius: 10%;
 }
 
 .card > p {
   text-align: center;
 }
 
+.topCard {
+  width: 100px;
+  height: 100px;
+}
+
+.quoteBlock {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  
+}
+
+.quoteBlock > .quoteText {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937; 
+  font-weight: 100;
+  padding: 16px;
+  width: 600px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.author {
+  font-weight: 900;
+  margin-top: 0px;
+  margin-left: 400px;
+}
 .actionBox {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 2;
 }
 
 .blueContainer {
   display: flex;
+  background-color: #3882F6;
+  padding: 16px 100px;
+  border-radius: 8px;
+  color: #E5E7EB;
+
+}
+
+.blueRight > button {
+  background-color: #3882F6;
+  padding: 8px 20px;
+  border-radius:8px;
+  border: none;
+  color: #E5E7EB;
+  font-weight: 800;
+  border: 2px solid #E5E7EB;
 }
 
 .footer {
   display: flex;
+  flex: 0.5;
   justify-content: center;
   align-items: center;
+  padding: 16px;
+  background-color: #1F2937;
+  color: #E5E7EB;
+
+  
 }
 
-body {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100vh;
-}
