@@ -16,19 +16,23 @@ ul {
 
 }
 
+.topWrapper {
+  background-color: #1F2937;
+  display: flex;
+  justify-content: center;
+}
+
 .top {
   display: flex;
   flex-direction: column;
-  flex: 2;
+
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
-  padding: 16px;
-  padding-top: 48px;
+  justify-content: space-between;
+  padding: 48px 16px;
   color: #E5E7EB;
-  background-color: #1F2937;
   flex: 0.5;
   gap: 30px;
 }
@@ -41,10 +45,9 @@ ul {
 .hero {
   display: flex;
   flex: 3;
-  background-color: #1F2937;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
-  padding: 50px;
+  padding: 50px 16px;
 }
 
 .title {
